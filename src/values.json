@@ -1,0 +1,190 @@
+[
+ {
+  "inputs": [
+   {
+    "internalType": "uint256",
+    "name": "_mortgageId",
+    "type": "uint256"
+   }
+  ],
+  "name": "approveMortgage",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+ },
+ {
+  "inputs": [
+   {
+    "internalType": "uint256",
+    "name": "_mortgageId",
+    "type": "uint256"
+   }
+  ],
+  "name": "invest",
+  "outputs": [],
+  "stateMutability": "payable",
+  "type": "function"
+ },
+ {
+  "inputs": [
+   {
+    "internalType": "uint256",
+    "name": "_mortgageId",
+    "type": "uint256"
+   }
+  ],
+  "name": "listMortgageRequest",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+ },
+ {
+  "inputs": [
+   {
+    "internalType": "uint256",
+    "name": "_mortgageId",
+    "type": "uint256"
+   }
+  ],
+  "name": "payMortgage",
+  "outputs": [],
+  "stateMutability": "payable",
+  "type": "function"
+ },
+ {
+  "inputs": [
+   {
+    "internalType": "uint256",
+    "name": "_propertyValue",
+    "type": "uint256"
+   },
+   {
+    "internalType": "uint256",
+    "name": "_mortgageAmount",
+    "type": "uint256"
+   },
+   {
+    "internalType": "uint256",
+    "name": "_downPayment",
+    "type": "uint256"
+   },
+   {
+    "internalType": "uint256",
+    "name": "_debtIncomeRatio",
+    "type": "uint256"
+   },
+   {
+    "internalType": "uint256",
+    "name": "_area",
+    "type": "uint256"
+   },
+   {
+    "internalType": "uint256",
+    "name": "_interestRate",
+    "type": "uint256"
+   },
+   {
+    "internalType": "int256",
+    "name": "_latitude",
+    "type": "int256"
+   },
+   {
+    "internalType": "int256",
+    "name": "_longitude",
+    "type": "int256"
+   }
+  ],
+  "name": "requestMortgage",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+ },
+ {
+  "inputs": [
+   {
+    "internalType": "uint256",
+    "name": "id",
+    "type": "uint256"
+   }
+  ],
+  "name": "getMortgage",
+  "outputs": [
+   {
+    "components": [
+     {
+      "internalType": "uint256",
+      "name": "id",
+      "type": "uint256"
+     },
+     {
+      "internalType": "address",
+      "name": "borrower",
+      "type": "address"
+     },
+     {
+      "internalType": "uint256",
+      "name": "propertyValue",
+      "type": "uint256"
+     },
+     {
+      "internalType": "uint256",
+      "name": "mortgageAmount",
+      "type": "uint256"
+     },
+     {
+      "internalType": "uint256",
+      "name": "downPayment",
+      "type": "uint256"
+     },
+     {
+      "internalType": "uint256",
+      "name": "debtIncomeRatio",
+      "type": "uint256"
+     },
+     {
+      "internalType": "uint256",
+      "name": "area",
+      "type": "uint256"
+     },
+     {
+      "internalType": "uint256",
+      "name": "interestRate",
+      "type": "uint256"
+     },
+     {
+      "components": [
+       {
+        "internalType": "int256",
+        "name": "latitude",
+        "type": "int256"
+       },
+       {
+        "internalType": "int256",
+        "name": "longitude",
+        "type": "int256"
+       }
+      ],
+      "internalType": "struct MortgageContract.Location",
+      "name": "location",
+      "type": "tuple"
+     },
+     {
+      "internalType": "enum MortgageContract.Status",
+      "name": "status",
+      "type": "uint8"
+     },
+     {
+      "internalType": "uint256",
+      "name": "fund",
+      "type": "uint256"
+     }
+    ],
+    "internalType": "struct MortgageContract.Mortgage",
+    "name": "",
+    "type": "tuple"
+   }
+  ],
+  "stateMutability": "view",
+  "type": "function"
+ }
+]

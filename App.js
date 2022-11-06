@@ -10,6 +10,7 @@ const Stack = createNativeStackNavigator();
 
 import Landing from './src/components/Landing';
 import Home from './src/components/Home';
+import Dashboard from './src/components/Dashboard';
 
 function getLibrary(provider){
   return new Web3(provider)
@@ -42,6 +43,12 @@ class App extends React.Component {
             <Stack.Screen  
               name="Home" 
               component={Home} 
+              options={{ headerShown: false }}
+            />
+
+            <Stack.Screen  
+              name="Dashboard" 
+              component={Dashboard} 
               options={{ headerShown: false }}
             />
 
